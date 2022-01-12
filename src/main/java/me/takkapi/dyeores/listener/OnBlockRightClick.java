@@ -240,6 +240,34 @@ public class OnBlockRightClick implements Listener {
                             || event.getClickedBlock().getType() == Material.DEEPSLATE_COPPER_ORE) {
                         event.getClickedBlock().setType(Material.DEEPSLATE_LAPIS_ORE);
                     }
+                    //Secret block :)))))))))))))))))))))))))))))
+                } else if(event.getItem().getType() == Material.BROWN_DYE) {
+                    if(event.getClickedBlock().getType() == Material.ANCIENT_DEBRIS) {
+                        player.sendMessage(ChatColor.RED + "Wait what are you trying to do?");
+                    }
+                    if (event.getClickedBlock().getType() == Material.DEEPSLATE_DIAMOND_ORE
+                            || event.getClickedBlock().getType() == Material.DEEPSLATE_COAL_ORE
+                            || event.getClickedBlock().getType() == Material.DEEPSLATE_GOLD_ORE
+                            || event.getClickedBlock().getType() == Material.DEEPSLATE_IRON_ORE
+                            || event.getClickedBlock().getType() == Material.DEEPSLATE_EMERALD_ORE
+                            || event.getClickedBlock().getType() == Material.DEEPSLATE_REDSTONE_ORE
+                            || event.getClickedBlock().getType() == Material.DEEPSLATE_COPPER_ORE
+                            || event.getClickedBlock().getType() == Material.DEEPSLATE_LAPIS_ORE
+                            || event.getClickedBlock().getType() == Material.DIAMOND_ORE
+                            || event.getClickedBlock().getType() == Material.COAL_ORE
+                            || event.getClickedBlock().getType() == Material.GOLD_ORE
+                            || event.getClickedBlock().getType() == Material.IRON_ORE
+                            || event.getClickedBlock().getType() == Material.EMERALD_ORE
+                            || event.getClickedBlock().getType() == Material.REDSTONE_ORE
+                            || event.getClickedBlock().getType() == Material.COPPER_ORE
+                            || event.getClickedBlock().getType() == Material.LAPIS_ORE) {
+                        player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a&kk &r&a&lWAIT WTF!!!! HOW DID YOU FIND THAT??????? YOU ARE NOT SUPPOSED TO KNOW THIS"));
+                        event.getClickedBlock().setType(Material.ANCIENT_DEBRIS);
+                    }
+                } else if(event.getItem().getType() == Material.BLUE_DYE || event.getItem().getType() == Material.ORANGE_DYE || event.getItem().getType() == Material.RED_DYE
+                        || event.getItem().getType() == Material.LIME_DYE || event.getItem().getType() == Material.YELLOW_DYE || event.getItem().getType() == Material.WHITE_DYE
+                         || event.getItem().getType() == Material.BLACK_DYE || event.getItem().getType() == Material.LIGHT_BLUE_DYE) {
+                    player.sendMessage(ChatColor.RED + "What are you trying to do?");
                 }
             }
         } catch(Exception e) {
