@@ -1,7 +1,0 @@
-name: DyeOres
-version: '1.0'
-main: me.takkapi.dyeores.DyeOres
-api-version: 1.18
-authors: [ Takkapi ]
-description: Dye any ore you want to change it
-website: https://discord.gg/btX7Hv9trx
